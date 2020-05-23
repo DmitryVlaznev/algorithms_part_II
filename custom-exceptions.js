@@ -12,4 +12,15 @@ class NoSuchElementException extends Error {
     }
 }
 
-module.exports = {IllegalArgumentException, NoSuchElementException}
+class IllegalFunctionCallException extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "IllegalFunctionCallException";
+    }
+}
+
+module.exports = {
+    IllegalArgumentException,
+    IllegalFunctionCallException,
+    NoSuchElementException,
+};
